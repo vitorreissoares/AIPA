@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - teste code 2</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências Agrárias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #ddd;
+        }
+        .header img {
+            max-width: 80%; 
+            height: auto;   
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #333;
+        }
+        .banner {
+            background-color: #e9ecef;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .title {
+            font-size: 1em;
+            color: #007bff;
+            flex: 1;
+        }
+        .copy-icon {
+            cursor: pointer;
+            color: #007bff;
+            font-size: 1em;
+            margin-left: 10px;
+            transition: color 0.3s;
+        }
+        .copy-icon:hover {
+            color: #0056b3;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .content p {
+            margin: 0;
+        }
+        .back-link {
+            font-size: 8px;
+            color: #007bff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #e0e0e0;
+        }
+        .go-btn {
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #007bff;
+            border-radius: 25px; /* Cantos arredondados */
+            padding: 5px 10px;
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 2px;
+        }
+        .go-btn:hover {
+            background-color: white; /* Fundo branco ao passar o mouse */
+            color: #007bff; /* Texto azul ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://proiniciar.uerj.br/pluginfile.php/1/theme_adaptable/logo/1709829991/Daiaie%20Coordenadoria%20de%20Inicia%C3%A7%C3%A3o%20COR.png" alt="Logo">
+        <h1>Projetos Selic 2024 | PR-2 | Ciências Agrárias</h1>
+    </div>
+
+    <div class="back-button">
+        <a href="https://proiniciar.uerj.br/course/index.php?categoryid=21" class="back-link">← Voltar</a>
+    </div>
+
+        <div class="banner">
+        Copie os títulos dos projetos para se inscrever!
+    </div>
+
+    <div class="container" id="projectList"> 
+        <div class="project">
+            <div class="title-container" onclick="toggleContent('content0')">
+                <div class="title">DESENVOLVIMENTO E ANÁLISE SENSORIAL DE PRODUTOS ALIMENTÍCIOS À BASE DE INSETOS COMESTÍVEIS</div>
+                <i class="fas fa-copy copy-icon" onclick="copyTitle(event, 'DESENVOLVIMENTO E ANÁLISE SENSORIAL DE PRODUTOS ALIMENTÍCIOS À BASE DE INSETOS COMESTÍVEIS')"></i>
+            </div>
+            <div class="content" id="content0">
+                <p><strong>Resumo:</strong> A FAO aposta no desenvolvimento da prática e aponta a entomofagia como uma das possíveis soluções para a fome e desnutrição devido às vantagens nutricionais, sociais, econômicas e ambientais dos insetos. O projeto proposto busca avaliar o potencial dos insetos comestíveis como matéria-prima na fabricação de alimentos.</p>
+                <p><strong>Coordenador(a):</strong> Aline Fonseca Da Silva Soares</p>
+                <p>
+                    <button class="go-btn" onclick="goToInsc()">Inscreva-se</button>
+                    <button class="go-btn" onclick="goToPerf()">Preencha o formulário de perfil</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="title-container" onclick="toggleContent('content1')">
+                <div class="title">INVESTIGAÇÃO DE FARINHA DE PANCS COMO POTENCIAL INGREDIENTE COM AÇÃO ANTIOXIDANTE EM BOLOS E BISCOITOS</div>
+                <i class="fas fa-copy copy-icon" onclick="copyTitle(event, 'INVESTIGAÇÃO DE FARINHA DE PANCS COMO POTENCIAL INGREDIENTE COM AÇÃO ANTIOXIDANTE EM BOLOS E BISCOITOS')"></i>
+            </div>
+            <div class="content" id="content1">
+                <p><strong>Resumo:</strong> O desenvolvimento de novos produtos inicia na tentativa de formulação que apresente a maior disponibilidade do componente alvo. O objetivo deste projeto é perpassar por todas essas etapas, concluindo com a elaboração de um produto de panificação (bolo e biscoito) com potencial antioxidante.</p>
+                <p><strong>Coordenador(a):</strong> Carolina Beres</p>
+                <p>
+                    <button class="go-btn" onclick="goToInsc()">Inscreva-se</button>
+                    <button class="go-btn" onclick="goToPerf()">Preencha o formulário de perfil</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="title-container" onclick="toggleContent('content2')">
+                <div class="title">IMPACTOS CAUSADOS PELO USO PÚBLICO EM TRILHAS DE PARQUES</div>
+                <i class="fas fa-copy copy-icon" onclick="copyTitle(event, 'IMPACTOS CAUSADOS PELO USO PÚBLICO EM TRILHAS DE PARQUES')"></i>
+            </div>
+            <div class="content" id="content2">
+                <p><strong>Resumo:</strong> As unidades de conservação de proteção integral permitem apenas o uso indireto dos recursos ambientais, viabilizado pela visitação para a recreação. Essas atividades geram impactos e a sua avaliação envolve o monitoramento de indicadores.</p>
+                <p><strong>Coordenador(a):</strong> Douglas De Souza Pimentel</p>
+                <p>
+                    <button class="go-btn" onclick="goToInsc()">Inscreva-se</button>
+                    <button class="go-btn" onclick="goToPerf()">Preencha o formulário de perfil</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function copyTitle(event, titleText) {
+            var tempInput = document.createElement("input");
+            tempInput.value = titleText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Título copiado: " + titleText);
+            event.stopPropagation(); // Impede o toggle quando clica no ícone
+        }
+
+        function goToInsc() {
+            window.location.href = "https://www.formularios.uerj.br/index.php/83743?lang=pt-BR";
+        }
+
+        function goToPerf() {
+            window.location.href = "https://www.formularios.uerj.br/index.php/2?lang=pt-BR";
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
